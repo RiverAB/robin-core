@@ -1,0 +1,47 @@
+    #messages {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+    }
+
+    #messages .message {
+        position: relative;
+        margin: 0 0 15px 0;
+        text-align: center;
+        padding: 10px 40px;
+        display: none;
+    }
+
+        #messages .message.error {
+            background-color: #D91E18;
+            color: #fff;
+        }
+
+        #messages .message.success {
+            background-color: #26A65B;
+            color: #fff;
+        }
+
+        #messages .message ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #messages .message .close-button {
+            position: absolute;
+            color: #fff;
+            top: 10px;
+            right: 10px;
+            line-height: 18px;
+            text-decoration: none;
+        }
+
+    .notice {
+        background-color: #fffcf0;
+        border: solid 1px #dfccc8;
+        padding: 10px;
+        margin-bottom: 15px;
+        margin-top: -20px;
+    }

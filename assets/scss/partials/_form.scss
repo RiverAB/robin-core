@@ -1,0 +1,80 @@
+    input[type="text"], input[type="password"], textarea, select {
+        border: solid 1px #bdc7cf;
+        background-color: #fff;
+        font: 16px "Open sans", helvetica, arial, sans-serif;
+        color: #444;
+        padding: 8px;
+        width: 100%;
+    }
+
+    input[type="text"].small, input[type="password"].small, textarea.small, select.small {
+        display: block;
+        max-width: 25%;
+    }
+
+    textarea {
+        height: 400px;
+    }
+
+    select {
+        width: auto;
+        padding: 4px 5px;
+    }
+
+    a.button, 
+    input[type="submit"].button, 
+    input[type="button"].button, 
+    button.button {
+        display: inline-block;
+        background-color: #222;
+        color: #fff;
+        border: 0;
+        padding: 10px 20px;
+        font: 14px "Open sans", helvetica, arial, sans-serif;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    a.button.confirm-btn, 
+    input[type="submit"].button.confirm-btn, 
+    input[type="button"].button.confirm-btn, 
+    button.button.confirm-btn {
+        background-color: #4183D7;
+    }
+
+    a.button.danger-btn, 
+    input[type="submit"].button.danger-btn, 
+    input[type="button"].button.danger-btn, 
+    button.button.danger-btn {
+        background-color: #D91E18;
+    }
+
+    input[type="checkbox"] {
+        margin: 0 5px 0 0;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    .trumbowyg-box {
+        background-color: #fff;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .trumbowyg-editor {
+        min-height: 200px;
+    }
+
+    .trumbowyg-button-pane {
+        position: relative;
+    }
+
+    .trumbowyg-button-pane:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }

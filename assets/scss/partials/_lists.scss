@@ -1,0 +1,51 @@
+    .list-container {
+        display: table;
+        width: 100%;
+    }
+
+    .list-item-container {
+        display: table-row;
+    }
+
+    .list-item {
+        display: table-cell;
+        padding: 10px;
+        border-bottom: solid 1px #ddd;
+        background-color: #fff;
+    }
+
+    .drag-handle {
+        color: #444;
+        cursor: move;
+    }
+
+        .drag-handle .icon {
+            opacity: 0.3;
+        }
+
+        .drag-handle:hover .icon {
+            opacity: 1;
+        }
+
+    .list-item-container:hover .item {
+        background-color: #f0f8ff;
+    }
+
+    .list-item.actions {
+        text-align: right;
+        width: 80px;
+    }
+
+        .list-item.actions a {
+            display: inline-block;
+            margin-left: 15px;
+            color: #333;
+            text-decoration: none;
+        }
+
+    .list-item.title {
+        background-color: #3498db;
+        color: #fff;
+        border: 0;
+        margin-bottom: 0;
+    }

@@ -1,0 +1,126 @@
+    .field {
+        position: relative;
+        padding: 0 0 30px 0;
+    }
+
+    .field label {
+        display: block;
+        font-size: 16px;
+        margin: 0 0 2px 0;
+        padding: 0;
+        font-weight: 700;
+    
+        &.thin {
+            font-weight: 400;
+        }
+    }
+
+    .field label.simple {
+        display: inline-block;
+        font-size: inherit;
+        margin: 0 20px 0 0;
+        padding: 0;
+        font-weight: inherit;
+    }
+
+    .field .description {
+        font-size: 16px;
+        padding: 0 0 5px 1px;
+        color: #16A085;
+        font-style: italic;
+    }
+
+        .field .description .icon {
+            display: inline-block;
+            margin-right: 5px;
+            color: #16A085;
+            font-size: 16px;
+            font-style: none;
+        }
+
+    .field-group {
+        position: relative;
+    }
+
+    .field-group.alt {
+        background-color: #e8eaef;
+        border: solid 1px #d8dadf;
+        padding: 20px;
+    }
+
+        .field-group:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+    .field-group .field.col1-2 {
+        float: left;
+        width: 48%;
+    }
+
+    .field-group .field.col1-2:last-of-type {
+        float: right;
+    }
+
+    .field-select-file ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    .field-select-file-actions {
+        display: table;
+        width: 100%;
+    }
+
+    .field-select-file ul {
+        display: table-row;
+    }
+
+        .field-select-file ul li {
+            display: table-cell;
+            position: relative;
+        }
+
+        .clear-selected-file {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #777;
+            height: 19px;
+            width: 19px;
+            text-align: center;
+            line-height: 19px;
+            display: none;
+        }
+
+        .selected-file-container:hover .clear-selected-file {
+            display: block;
+        }
+
+        .field-select-file ul li.button {
+            width: 130px;
+            padding-left: 10px;
+        }
+
+            .field-select-file ul li.button a {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+        .field-select-file .selected-file-preview img {
+            max-width: 600px;
+            max-height: 150px;
+        }
+
+
+        .selected-file-preview {
+            position: relative;
+            padding-top: 10px;
+        }

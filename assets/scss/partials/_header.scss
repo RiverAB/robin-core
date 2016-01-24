@@ -1,0 +1,22 @@
+    #brand {
+        position: relative;
+        width: 100%;
+        padding: 0 30px 0 30px;
+        text-align: left;
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: -1px;
+        color: #ffff;
+        overflow: hidden;
+    }
+
+        #brand .dot {
+            font-size: 60px;
+            line-height: 25px;
+            opacity: 0.5;
+        }
+
+        #brand img {
+            max-width: 100%;
+            max-height: 30px;
+        }

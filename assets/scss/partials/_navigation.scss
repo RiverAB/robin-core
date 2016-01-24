@@ -1,0 +1,103 @@
+    #main-nav {
+        position: relative;
+        padding: 30px 40px 50px 20px;
+    }
+    
+        #main-nav a {
+            color: #fff;
+            font-size: 14px;
+        }
+
+
+    ul.nav-list {
+        margin: 0 0 20px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        ul.nav-list li {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.nav-list li.title {
+            margin: 0 0 5px 10px;
+            padding: 0 10px 5px 0;
+            border-bottom: solid 1px #40484c;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        ul.nav-list li a {
+            display: block;
+            padding: 3px 10px;
+            text-decoration: none;
+            opacity: 0.75;
+        }
+
+            ul.nav-list li a .icon {
+                display: inline-block;
+                color: #999;
+                width: 25px;
+            }
+
+        ul.nav-list li a:hover {
+            background-color: #10181c;
+            opacity: 1;
+        }
+
+            ul.nav-list li a:hover .icon {
+                color: #ddd;
+            }
+
+        ul.nav-list li.current a {
+            color: #f00;
+            font-weight: 700;
+            opacity: 1;
+        }
+
+        ul.nav-list li.current a .icon {
+            color: #fff;
+        }
+
+    .subnav {
+        position: relative;
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+
+        .subnav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        .subnav ul.nav2 {
+            float: right;
+        }
+
+            .subnav:after, .subnav ul:after {
+                content: ".";
+                display: block;
+                clear: both;
+                visibility: hidden;
+                line-height: 0;
+                height: 0;
+            }
+
+        .subnav ul li {
+            list-style: none;
+            margin: 0 20px 0 0;
+            padding: 0;
+            float: left;
+        }
+
+        .subnav ul.nav2 li {
+            margin: 0 0 0 20px;
+        }
+
+        .subnav ul li a {
+            display: inline-block;
+        }

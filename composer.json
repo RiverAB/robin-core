@@ -1,0 +1,23 @@
+{
+    "name": "river/robin-core",
+    "description": "The core files for river/robin",
+    "type": "project",
+    "require": {
+        "illuminate/container": "4.2.*",
+        "twig/twig": "1.23.*",
+        "phroute/phroute": "2.1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Magnus Eriksson",
+            "email": "magnus.eriksson@river.se"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "RobinCms\\Core\\": "src/"
+        }
+    }
+}
