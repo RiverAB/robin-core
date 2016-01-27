@@ -31,6 +31,18 @@ class App extends Container
      */
     protected $modules = [];
 
+    /**
+     * Additional admin css-files
+     * @var array
+     */
+    protected $adminCss = [];
+
+    /**
+     * Additional admin js-files
+     * @var array
+     */
+    protected $adminJs = [];
+
 
     /**
      * @param array $paths  List of named application paths (name => path)
@@ -193,6 +205,28 @@ class App extends Container
     public function jsonResponse($body = null, $success = true, array $errors = array(), $code = 200)
     {
         return new JsonResponse($body, $success, $errors, $code);
+    }
+
+
+    /**
+     * Add css-file(s) to be included in the admin
+     * 
+     * @param string|array $files   Uri to the css-file relative from the static folder
+     */
+    public function addAdminCss($files)
+    {
+        return $this;
+    }
+
+
+    /**
+     * Add js-file(s) to be included in the admin
+     * 
+     * @param string|array $files   Uri to the js-file relative from the static folder
+     */
+    public function addAdminJs($files)
+    {
+        return $this;
     }
 
 

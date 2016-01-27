@@ -30,7 +30,7 @@ class Robin
      */
     public function theme_path($file = null)
     {
-        return rtrim('/static/themes/' . $this->app->config->get('theme') . '/' . $file);
+        return $this->static_path('themes/' . $this->app->config->get('theme') . '/' . $file);
     }
 
 
@@ -42,7 +42,20 @@ class Robin
      */
     public function admin_theme_path($file = null)
     {
-        return rtrim('/static/admin/' . $this->app->config->get('admin.theme') . '/' . $file);
+        return $this->static_path('admin/' . $this->app->config->get('admin.theme') . '/' . $file);
+    }
+
+
+    /**
+     * Get the uri to the static folder
+     * 
+     * @param  string   $file
+     * @return string
+     */
+    public function static_path($file = null)
+    {
+        $file   = trim($file, '/');
+        return rtrim('/static/' . $file);
     }
 
 
