@@ -23,6 +23,23 @@
     </script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="{{ robin.admin_theme_path('js/app.js') }}"></script>
+
+    {% if module_css %}
+        {% for css in module_css %}
+
+    <link rel="stylesheet" type="text/css" href="{{ css }}" />
+
+        {% endfor %}
+    {% endif %}
+
+    {% if module_js %}
+        {% for js in module_js %}
+
+    <script src="{{ js }}"></script>
+
+        {% endfor %}
+    {% endif %}
+
 </head>
 {% set body_class = current_menu? ' class="body-' ~ current_menu ~ '"' %}
 <body{{ body_class | raw }}>

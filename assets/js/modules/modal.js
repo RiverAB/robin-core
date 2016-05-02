@@ -1,6 +1,6 @@
 var Modal = (function(){
 
-    var $overlay, $container, $content, $title, 
+    var $overlay, $container, $content, $title, css,
         opened = false;
 
     function init()
@@ -21,11 +21,17 @@ var Modal = (function(){
         });
     }
 
-    function show(title, content)
+    function show(title, content, containerCss)
     {
         if (!opened) {
-            $overlay.show();
-            $container.show();
+
+            if (typeof containerCss != "undefined") {
+                css = containerCss;
+                $container.addClass(css);
+            }
+
+            $overlay.fadeIn(200);
+            $container.fadeIn(200);
             $("body").addClass('no-scroll');
             opened = true;
         }
@@ -42,10 +48,15 @@ var Modal = (function(){
     function hide()
     {
         if (opened) {
-            $overlay.hide();
-            $container.hide();
+            $overlay.fadeOut(200);
+            $container.fadeOut(200, function(){
+                if (css) {
+                    $(this).removeClass(css);
+                    css = null;
+                }
+            });
             $content.html('');
-            showSpinner();
+            //showSpinner();
             $title.html('');
             $("body").removeClass('no-scroll');
             opened = false;

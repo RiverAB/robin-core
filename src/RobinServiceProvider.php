@@ -112,6 +112,14 @@ class RobinServiceProvider extends ServiceProvider
                 return get_file_type($filename);
             }));
 
+            $twig->addFunction(new \Twig_SimpleFunction('json_encode', function($string) {
+                return json_encode($string);
+            }));
+
+            $twig->addFunction(new \Twig_SimpleFunction('json_decode', function($string) {
+                return json_decode($string);
+            }));
+
             $twig->addGlobal('robin',       $app->make('RobinCms\Core\Robin'));
             $twig->addGlobal('error',       $app->session->getFlash('error'));
             $twig->addGlobal('success',     $app->session->getFlash('success'));

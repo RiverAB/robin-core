@@ -14,9 +14,18 @@
         background-color: #fff;
     }
 
+    .list-item a {
+        color: #666;
+    }
+
+    .list-item a:hover {
+        color: #222;
+    }
+
     .drag-handle {
         color: #444;
         cursor: move;
+        width: 30px;
     }
 
         .drag-handle .icon {

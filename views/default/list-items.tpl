@@ -38,7 +38,9 @@
 
                 {% for field_key in list.show_in_admin %}
                 <div class="list-item item">
-                    {{ robin.list_item_content(list.key~'.'~item_key~'.'~field_key) }}
+                    <a href="{{ robin.route('robin.list-item.edit', [list.key, item_key]) }}">
+                        {{ robin.list_item_content(list.key~'.'~item_key~'.'~field_key) }}
+                    </a>
                     
                 </div>
                 {% endfor %}
