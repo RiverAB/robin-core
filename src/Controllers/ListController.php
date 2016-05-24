@@ -100,7 +100,10 @@ class ListController extends Controller
         }
 
         if (!$errors) {
-            if (!$this->lists->updateListItem($listKey, $itemKey, $fields)) {
+            $updated = $this->lists->updateListItem($listKey, $itemKey, $fields);
+            if (is_string($updated)) {
+                $errors[] = $updated;
+            } else if ($updated !== true) {
                 $errors[] = "Something went wrong. Content not updated";
             }
         }
