@@ -38,6 +38,7 @@
             font-style: none;
         }
 
+
     .field-group {
         position: relative;
     }
@@ -124,3 +125,7 @@
             position: relative;
             padding-top: 10px;
         }
+
+    .field-textarea {
+        height: 300px;
+    }

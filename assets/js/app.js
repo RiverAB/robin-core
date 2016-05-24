@@ -142,6 +142,10 @@ $(function(){
     Modal.init();
     Messages.init($("#messages"));
 
+    // Init tab indent
+    tabIndent.config.tab = '    ';
+    tabIndent.renderAll();    
+
 });
 
 
